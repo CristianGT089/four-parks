@@ -26,6 +26,25 @@ function App() {
     const [initialCoords, setInitialCoords] = useState([]);
     const options = { enableHighAccuracy: true, timeout: 20000, maximumAge: 0 };
 
+    function performSignIn() {
+        let headers = new Headers();
+    
+        headers.append('Content-Type', 'application/json');
+        headers.append('Accept', 'application/json');
+        headers.append('Authorization', 'Basic ' + base64.encode(username + ":" +  password));
+        headers.append('Origin','http://localhost:3000');
+    
+        fetch(sign_in, {
+            mode: 'cors',
+            credentials: 'include',
+            method: 'POST',
+            headers: headers
+        })
+        .then(response => response.json())
+        .then(json => console.log(json))
+        .catch(error => console.log('Authorization failed: ' + error.message));
+    }
+
     function errors(err) {
         console.warn(`ERROR(${err.code}): ${err.message}`);
     }
@@ -73,6 +92,8 @@ function App() {
     useEffect(() => {
         geolocalizate();
     }, []);
+
+    performSignIn();
 
   return (
     <ApiProvider>
