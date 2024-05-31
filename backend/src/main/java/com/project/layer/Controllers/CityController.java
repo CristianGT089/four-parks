@@ -14,7 +14,7 @@ import com.project.layer.Services.Map.MapService;
 
 import lombok.RequiredArgsConstructor;
 
-@CrossOrigin("https://fourparks.site")
+@CrossOrigin("https://fourparks.site/")
 @RestController
 @RequestMapping("/city")
 @Controller

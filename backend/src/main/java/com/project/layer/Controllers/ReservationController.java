@@ -43,7 +43,7 @@ import jakarta.mail.MessagingException;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 
-@CrossOrigin("*")
+@CrossOrigin("https://fourparks.site/")
 @RestController
 @Controller
 @RequestMapping("/reservation")

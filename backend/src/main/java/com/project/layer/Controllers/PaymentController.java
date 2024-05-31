@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
-@CrossOrigin("https://fourparks.site")
+@CrossOrigin("https://fourparks.site/")
 @RestController
 @RequestMapping("/payment")
 @RequiredArgsConstructor

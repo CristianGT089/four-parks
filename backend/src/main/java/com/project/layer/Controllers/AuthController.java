@@ -42,7 +42,7 @@ import lombok.RequiredArgsConstructor;
 import java.util.List;
 import java.util.Arrays;
 
-@CrossOrigin("https://fourparks.site")
+@CrossOrigin("https://fourparks.site/")
 @RestController
 @RequestMapping("/auth")
 @RequiredArgsConstructor
