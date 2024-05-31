@@ -32,7 +32,7 @@ function App() {
         headers.append('Content-Type', 'application/json');
         headers.append('Accept', 'application/json');
         headers.append('Authorization', 'Basic ' + base64.encode(username + ":" +  password));
-        headers.append('Origin','http://localhost:3000');
+        headers.append('Origin','http://localhost:8080');
     
         fetch(sign_in, {
             mode: 'cors',
