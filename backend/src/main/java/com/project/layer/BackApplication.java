@@ -19,10 +19,11 @@ public class BackApplication {
 			public void addCorsMappings(@SuppressWarnings("null") CorsRegistry registry) {
 				registry
 					.addMapping("/**")
-					.allowedOrigins("https://fourparks.site")
+					.allowedOrigins("*")
 					.allowedMethods("*")
 					.exposedHeaders("*")
-					.allowedHeaders("*");
+					.allowedHeaders("*")
+					.allowCredentials(false);
 			}
 		};
 	}
