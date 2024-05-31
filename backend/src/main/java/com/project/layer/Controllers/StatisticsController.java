@@ -18,7 +18,7 @@ import com.project.layer.Services.Statistics.StatisticsService;
 
 import lombok.RequiredArgsConstructor;
 
-@CrossOrigin("*")
+@CrossOrigin("https://fourparks.site")
 @RestController
 @RequestMapping("/statistics")
 @RequiredArgsConstructor

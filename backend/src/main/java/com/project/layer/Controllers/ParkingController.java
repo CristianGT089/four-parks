@@ -40,7 +40,7 @@ import com.project.layer.Services.ScoreSystem.ScoreSystemService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
-@CrossOrigin("*")
+@CrossOrigin("https://fourparks.site")
 @RestController
 @Controller
 @RequestMapping("/parking")
