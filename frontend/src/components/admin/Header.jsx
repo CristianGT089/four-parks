@@ -39,7 +39,7 @@ const Header = () => {
                             {onToggle && (
                                 <ul className="absolute bg-white shadow-md mt-2 py-2 w-52">
                                    
-                                    <li><Link to="/cambio-contraseña-admin" className="text-black hover:text-white hover:bg-red-light py-2 px-4 block">Cambiar contraseña</Link></li>
+                                    <li><Link to="/cambio-contraseña-admin" className="text-black hover:text-white hover:bg-red-light py-2 px-5 block">Cambiar contraseña</Link></li>
                                    
                                     <li><Link to="/" className="text-black hover:text-white hover:bg-red-light py-2 px-4 block">Cerrar sesión</Link></li>
                                 </ul>
